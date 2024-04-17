@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Dev\CppTutorials\OpenGL\OpenGL\src\main.cpp(224,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  OpenGL.vcxproj -> C:\Dev\CppTutorials\OpenGL\x64\Debug\OpenGL.exe
