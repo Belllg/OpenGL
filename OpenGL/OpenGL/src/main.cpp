@@ -13,7 +13,7 @@ void processInput(GLFWwindow* window);
 void drawFPS(GLFWwindow* window);
 
 // settings
-const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_WIDTH = 900;
 const unsigned int SCR_HEIGHT = 600;
 //fps calculation variables
 double prevTime = 0.0;

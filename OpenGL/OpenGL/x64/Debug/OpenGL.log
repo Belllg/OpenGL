@@ -1,3 +1,11 @@
-﻿  main.cpp
-C:\Dev\CppTutorials\OpenGL\OpenGL\src\main.cpp(224,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  OpenGL.vcxproj -> C:\Dev\CppTutorials\OpenGL\x64\Debug\OpenGL.exe
+﻿  EBO.cpp
+  main.cpp
+C:\Users\55419\Documents\Games\OpenGL\OpenGL\OpenGL\src\main.cpp(224,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  shader.cpp
+  stb_image.cpp
+  VAO.cpp
+  VBO.cpp
+  Generating Code...
+  glad.c
+  LINK : C:\Users\55419\Documents\Games\OpenGL\OpenGL\x64\Debug\OpenGL.exe not found or not built by the last incremental link; performing full link
+  OpenGL.vcxproj -> C:\Users\55419\Documents\Games\OpenGL\OpenGL\x64\Debug\OpenGL.exe
