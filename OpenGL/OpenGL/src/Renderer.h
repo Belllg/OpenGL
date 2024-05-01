@@ -8,7 +8,7 @@
 		x;\
 		ASSERT(GLLogCall(#x, __FILE__, __LINE__))
 #else
-#define GLCall(x) x
+#define GLCALL(x) x
 #endif
 
 
