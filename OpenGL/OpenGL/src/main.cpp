@@ -173,8 +173,6 @@ int main()
 		glfwPollEvents();
 	}
 
-	// optional: de-allocate all resources once they've outlived their purpose:
-	// ------------------------------------------------------------------------
 	VAO.Delete();
 	VBO.Delete();
 	EBO.Delete();
