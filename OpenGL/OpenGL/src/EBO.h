@@ -1,4 +1,4 @@
-#ifndef EBO_CLASS_H
+#pragma once
 #define EBO_CLASS_H
 
 #include<glad/glad.h>
@@ -18,5 +18,3 @@ public:
 	// Deletes the EBO
 	void Delete();
 };
-
-#endif

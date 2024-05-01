@@ -1,4 +1,4 @@
-#ifndef VAO_CLASS_H
+#pragma once
 #define VAO_CLASS_H
 
 #include<glad/glad.h>
@@ -22,5 +22,3 @@ public:
 	// Deletes the VAO
 	void Delete();
 };
-
-#endif
