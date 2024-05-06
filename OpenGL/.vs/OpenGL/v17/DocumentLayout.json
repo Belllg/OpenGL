@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{71AB163F-4C3C-487E-A06D-3D2822BA80D2}|OpenGL\\OpenGL.vcxproj|C:\\Users\\55419\\Documents\\Games\\OpenGL\\OpenGL\\OpenGL\\src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{71AB163F-4C3C-487E-A06D-3D2822BA80D2}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71AB163F-4C3C-487E-A06D-3D2822BA80D2}|OpenGL\\OpenGL.vcxproj|C:\\Users\\55419\\Documents\\Games\\OpenGL\\OpenGL\\OpenGL\\src\\res\\shaders\\vBasic.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{71AB163F-4C3C-487E-A06D-3D2822BA80D2}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\res\\shaders\\vBasic.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "vBasic.glsl",
+              "DocumentMoniker": "C:\\Users\\55419\\Documents\\Games\\OpenGL\\OpenGL\\OpenGL\\src\\res\\shaders\\vBasic.glsl",
+              "RelativeDocumentMoniker": "OpenGL\\src\\res\\shaders\\vBasic.glsl",
+              "ToolTip": "C:\\Users\\55419\\Documents\\Games\\OpenGL\\OpenGL\\OpenGL\\src\\res\\shaders\\vBasic.glsl",
+              "RelativeToolTip": "OpenGL\\src\\res\\shaders\\vBasic.glsl",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-06T17:35:56.973Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "OpenGL\\src\\Main.cpp",
               "ToolTip": "C:\\Users\\55419\\Documents\\Games\\OpenGL\\OpenGL\\OpenGL\\src\\Main.cpp",
               "RelativeToolTip": "OpenGL\\src\\Main.cpp",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAFAAAAAlAAAA",
+              "ViewState": "AQIAALYAAAAAAAAAAAAgwMMAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-30T18:26:06.587Z",
               "EditorCaption": ""

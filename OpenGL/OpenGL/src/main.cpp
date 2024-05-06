@@ -60,6 +60,7 @@ int main()
 		return -1;
 	}
 
+
 	// build and compile our shader program
 	// ------------------------------------
 	Shader ourShader("src/res/shaders/vBasic.glsl", "src/res/shaders/fBasic.glsl"); // you can name your shader files however you like
@@ -145,6 +146,7 @@ int main()
 
 	while (!glfwWindowShouldClose(window))
 	{
+
 		drawFPS(window);
 
 		// input
@@ -166,10 +168,43 @@ int main()
 		GLCALL(glActiveTexture(GL_TEXTURE1));
 		GLCALL(glBindTexture(GL_TEXTURE_2D, texture2));
 
+		/*
+		// create transformations
+		glm::mat4 transform = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+		transform = glm::translate(transform, glm::vec3(0.5f, -0.5f, 0.0f));
+		transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+
+		// get matrix's uniform location and set matrix
+		unsigned int transformLoc = glGetUniformLocation(ourShader.ID, "transform");
+		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
+
 		VAO.Bind();
 		GLCALL(glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0));
+		*/
 
+		glm::mat4 transform = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+		// first container
+		// ---------------
+		transform = glm::translate(transform, glm::vec3(0.5f, -0.5f, 0.0f));
+		transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+		// get their uniform location and set matrix (using glm::value_ptr)
+		unsigned int transformLoc = glGetUniformLocation(ourShader.ID, "transform");
+		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
 
+		// with the uniform matrix set, draw the first container
+		VAO.Bind();
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+		// second transformation
+		// ---------------------
+		transform = glm::mat4(1.0f); // reset it to identity matrix
+		transform = glm::translate(transform, glm::vec3(-0.5f, 0.5f, 0.0f));
+		float scaleAmount = static_cast<float>(sin(glfwGetTime()));
+		transform = glm::scale(transform, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
+		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform)); 
+
+		// now with the uniform matrix being replaced with new transformations, draw it again.
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
 		// -------------------------------------------------------------------------------
 		glfwSwapBuffers(window);
